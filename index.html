@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Volunteer Registration Form</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required oninput="updateBenefits()">
+
+            <label for="contact">Contact Details:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="role">Preferred Volunteer Role:</label>
+            <select id="role" name="role">
+                <option value="usher">Usher</option>
+                <option value="concessions">Concessions</option>
+                <option value="security">Security</option>
+                <option value="stagehand">Stagehand</option>
+            </select>
+
+            <label for="tshirtSize">T-Shirt Size:</label>
+            <select id="tshirtSize" name="tshirtSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">XL</option>
+            </select>
+
+            <div id="benefits">
+                <h3>Benefits:</h3>
+                <ul id="benefitsList">
+                    <!-- Benefits will be dynamically inserted here -->
+                </ul>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
