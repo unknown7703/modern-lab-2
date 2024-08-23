@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #000879, #bdbdbd);
+    background: linear-gradient(135deg, #000879, #e835b0);
     color: #fff;
     text-align: center;
     margin: 0;
@@ -75,5 +75,28 @@ button {
 }
 
 button:hover {
-    background-color: #ff4081;
+    background-color: #0288ca;
+}
+
+.confirmation {
+    margin-top: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+    font-size: 2rem;
+}
+
+.confirmation p {
+    font-size: 1.2rem;
+}
+
+.confirmation ul{
+    list-style-type:none;
 }
